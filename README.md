@@ -3,12 +3,11 @@ The `Krypto.Binance` and `Krypto.CoinPair` servers are started along with applic
 
 ![Project Out Line Image](krypto.png)
 
-
 ## Project Highlighted Module
 
-### Kyrpto.CoinPair
+### Krypto.CoinPair
 
-This module simulates a Persistent Server for subscribing the coinpair andstoring the prices of coinpair using `GenServer`.
+This module simulates a Persistent Server for subscribing the coinpair and storing the prices of coinpair using `GenServer`.
 
 It will start as soon as our `krypto` app starts.
 
@@ -66,7 +65,7 @@ Running Interactively
 
 ## Project Challenges
 
-- Websckex Integration (Binance) Subscription Implementation.
+- Websockex Integration (Binance) Subscription Implementation.
 - CoinPair Server for subscribing and updating the coinpair prices.
 
 
@@ -110,7 +109,7 @@ I felt it is a well framed to test core concepts of Elixir as project made me to
 
 Thank You :)
 
-Best Regards,
+Best Regards,      
 Ankanna
 
 
