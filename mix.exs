@@ -7,6 +7,7 @@ defmodule Krypto.MixProject do
       version: "0.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
+      releases: releases(),
       deps: deps()
     ]
   end
@@ -22,10 +23,19 @@ defmodule Krypto.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:websockex, "~> 0.4.3"},
       {:jason, "~> 1.4"}
+    ]
+  end
+
+  # Releasing versions
+  defp releases do
+    [
+      krypto: [
+        include_executables_for: [:unix],
+        applications: [runtime_tools: :permanent],
+        path: "./releases"
+      ]
     ]
   end
 end
