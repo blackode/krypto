@@ -3,11 +3,11 @@ defmodule Krypto.Application do
 
   use Application
 
-  @binance_url "wss://stream.binance.com:9443/ws/stream"
   @impl true
   def start(_type, _args) do
     children = [
-      {Krypto.Binance, @binance_url}
+      Krypto.Binance,
+      Krypto.CoinPair
     ]
 
     opts = [strategy: :one_for_one, name: Krypto.Supervisor]
