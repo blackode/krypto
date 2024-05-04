@@ -107,7 +107,7 @@ iex> :sys.trace(Process.whereis(Krypto.Binance), true)
 
 I felt it is a well framed to test core concepts of Elixir as project made me to code in all the core concepts of Elixir like `GenServers`, `Enumaration`, `message communications`, `websocket`.
 
-Thank You :)
+**Thank You :)**
 
 Best Regards,      
 Ankanna
