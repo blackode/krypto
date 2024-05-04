@@ -69,6 +69,34 @@ Running Interactively
 - Websckex Integration (Binance) Subscription Implementation.
 - CoinPair Server for subscribing and updating the coinpair prices.
 
+
+## Usage of Application
+When the application starts, we have two modules available. `Krypto.Binance` and `Krypto.CoinPair`. The `Krypto.Binance` establish a websocket connection as soon as the application starts.
+
+
+## Subscribing a coinpair
+```elixir
+
+iex> Krypto.CoinPair "btcusdt"
+:ok
+iex> Krypto.CoinPair "ethusdt"
+:ok
+
+```
+
+## Getting Average price for coinpair
+```elixir
+
+iex> Krypto.CoinPair.get_average "btcusdt"
+{:ok, 64019.6706875}
+
+
+iex> Krypto.CoinPair.get_average "ethusdt"
+{:ok, 3150.221481481482}
+
+
+```
+
 ## Debugging
 
 ```elixir
