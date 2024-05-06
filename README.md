@@ -76,9 +76,10 @@ When the application starts, we have two modules available. `Krypto.Binance` and
 ## Subscribing a coinpair
 ```elixir
 
-iex> Krypto.CoinPair "btcusdt"
+iex> Krypto.CoinPair.subscribe "btcusdt"
 :ok
-iex> Krypto.CoinPair "ethusdt"
+
+iex> Krypto.CoinPair.subscribe "ethusdt"
 :ok
 
 ```
